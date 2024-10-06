@@ -1,0 +1,29 @@
+{
+    "name": "x/x",
+    "description": "Laravel Startup KIT",
+    "autoload": {
+        "psr-4": {
+            "X\\X\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Denis Ristic",
+            "email": "denis_r_home@yahoo.com"
+        }
+    ],
+    "require": {},
+    "extra" : {
+        "laravel" : {
+            "providers" : [
+                "X\\X\\Providers\\LoadXProjectServiceProvider",
+                "X\\X\\Providers\\LoadDirectivesServiceProvider",
+                "X\\X\\Providers\\LoadXLogServiceProvider",
+                "X\\X\\Providers\\LoadCommandsServiceProvider",
+                "X\\X\\Providers\\LoadComponentViewsProvider",
+                "X\\X\\Providers\\RegisterComponentsServiceProvider",
+                "X\\X\\Providers\\LoadBootstrapPaginationServiceProvider"
+            ]
+        }
+    }
+}
